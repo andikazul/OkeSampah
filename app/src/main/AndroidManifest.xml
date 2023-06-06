@@ -21,6 +21,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.okesampah.activity.LoginActivity" />
+        <activity android:name="com.example.okesampah.activity.MasukActivity" />
+        <activity android:name="com.example.okesampah.activity.RegisterActivity" />
     </application>
 
 </manifest>

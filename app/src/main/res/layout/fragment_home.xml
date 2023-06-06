@@ -50,30 +50,42 @@
 
     </RelativeLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/vp_slider"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_190sdp"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="@dimen/_15sdp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/_16ssp"
-            android:text="Pelanggan"
-            android:layout_marginHorizontal="@dimen/_10sdp"
-            android:textStyle="bold"
-            android:textColor="#FFC107"/>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_pelanggan"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="match_parent">
 
-    </LinearLayout>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp_slider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_190sdp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_16ssp"
+                    android:text="Pelanggan"
+                    android:layout_marginHorizontal="@dimen/_10sdp"
+                    android:textStyle="bold"
+                    android:textColor="#FFC107"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_pelanggan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
 </LinearLayout>
